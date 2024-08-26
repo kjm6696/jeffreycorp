@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome - Jeffrey Corp.</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <div class="header">
+        <img class="jefflogo" src="https://4m4you.com/wp-content/uploads/2020/06/logo-placeholder.png" alt="Jeffrey Corp.">
+        <img class="burgerlogo" src="assets/burgerking.png" alt="Burger King">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="hamb"></div>
+            <div class="hamb2"></div>
+            <div class="hamb"></div>
+        </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-btn" onclick="toggleMenu()">&#10005;</span> <!-- Exit Button -->
+        <a href="index.html">Home</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="services.html">Services</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="services.html">Services</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Jeffrey Corp.</h1>
+        <div class="content">
+            <div class="slideshow-content">
+                slideshow content here
+            </div>
+            <div class="homelinks-content">
+                <a class="storelocator" href="storelocator.html">Store Locator</a>
+                <a class="about" href="about.html">About Us</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Jeffrey Corp. All rights reserved.</p>
+    </footer>
+    <script src="js/nav.js"></script>
+</body>
+</html>
