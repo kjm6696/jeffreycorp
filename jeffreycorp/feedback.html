@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback - Jeffrey Corp.</title>
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="header">
+        <img class="jefflogo" src="https://4m4you.com/wp-content/uploads/2020/06/logo-placeholder.png" alt="Jeffrey Corp.">
+        <img class="burgerlogo" src="assets/burgerking.png" alt="Burger King">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="hamb"></div>
+            <div class="hamb2"></div>
+            <div class="hamb"></div>
+        </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-btn" onclick="toggleMenu()">&#10005;</span> <!-- Exit Button -->
+        <a href="index.html">Home</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="services.html">Services</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="services.html">Services</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="feedback-container">
+        <div class="text-contatiner">
+            <h1>We Value Your Feedback</h1>
+            <p class="text">At Jeffrey Corp., we are committed to continuously improving our 
+                services and ensuring your experience is exceptional. 
+                Your feedback is essential to us as it helps us understand what we're doing well 
+                and where we can make improvements.</p>
+            <h1>What Can You Share?</h1>
+            <ul class="text">
+                <li class="text">Compliment: Let us know if you’ve had a positive experience or want to give us a pat on the back.</li>
+                <li class="text">Suggestion: Share your ideas for how we can enhance our services or operations.</li>
+                <li class="text" >Issue: If you’ve encountered any issues or have concerns, we want to hear about them so we can address them promptly.</li>
+            </ul>
+            </p>
+            <h1>How to Submit Feedback</h1>
+            <p class="text" id="form-location">To submit feedback, please fill out the form on the right. You can provide your name and email address if you wish, 
+                but it is not required. We appreciate your time and feedback, and we will do our best to respond to your message promptly.</p>
+        </div>
+        
+        <div class="form-container">
+            <form id="form" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleSubmit(event)">
+                <input type="hidden" name="access_key" value="851a3ffd-232f-4415-b70b-091a0ecfbf68">
+                <input type="hidden" name="from_name" value="Jeffrey Corp. Feedback">
+                <input id="name" type="text" name="name" placeholder="Name (Optional)" >
+                <input id="email" type="email" name="email" placeholder="Email (Optional)">
+                <select class="select" name="subject" required>
+                    <option value="" disabled selected>Select a Subject</option>
+                    <option value="Compliment">Compliment</option>
+                    <option value="Suggestion">Suggestion</option>
+                    <option value="Issue">Issue</option>
+                </select>
+                <textarea name="message" required></textarea>
+                
+                <input type="hidden" name="redirect" value="http://localhost:5500/thankyou.html">
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+    </div>
+    <p class="privacy-notice">We respect your privacy. Your information will not be shared with third parties.</p>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Jeffrey Corp. All rights reserved.</p>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/feedback.js"></script>
+</body>
+</html>
