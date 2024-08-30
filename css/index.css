@@ -32,6 +32,7 @@ body{
     flex-direction: column;
     width: 25%;
     height: 50%;
+    
 }
 
 .storelocator, .about {
@@ -39,7 +40,7 @@ body{
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     background-color: #FF8731;
-    width: 50%;
+    width: 300px;
     height: 40%;
     margin: auto;
     border-radius: 10px;
@@ -80,4 +81,6 @@ body{
     font-size: 3rem;
     padding: 1%;
 }
+
+
 
