@@ -172,6 +172,13 @@ html {
 
 /* Media query for smaller screens */
 @media screen and (max-width: 800px) {
+    .specs{
+        flex-direction: column;
+    }
+    .callUs, .sendMessage, .visitUs{
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .formContainer {
         flex-direction: column; /* Stack the form and hours vertically on smaller screens */
     }
