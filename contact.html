@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Jeffrey Corp.</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/12dc875fff.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="header">
+        <img class="jefflogo" src="https://4m4you.com/wp-content/uploads/2020/06/logo-placeholder.png" alt="Jeffrey Corp.">
+        <img class="burgerlogo" src="assets/burgerking.png" alt="Burger King">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="hamb"></div>
+            <div class="hamb2"></div>
+            <div class="hamb"></div>
+        </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-btn" onclick="toggleMenu()">&#10005;</span> <!-- Exit Button -->
+        <a href="index.html">Home</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="services.html">Services</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="services.html">Services</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        
+        <div class="text">
+            <h1>Contact Us</h1>
+            <p>We’re here to help! If you have any questions or need assistance, feel free to reach out.</p>
+            <p>You can contact us through the form below or use any of the methods you prefer. We aim to respond to all inquiries in a timely manner.</p>
+        </div>
+        
+        
+        <div class="specs">
+            
+            <div class="callUs">
+                <i class="fa-solid fa-phone fa-3x" style="color: #ffffff;"></i>
+                <h1>Call Us</h1>
+                <a class="phoneNum" href="tel:301-663-3511">301-663-3511</a>
+            </div>
+            
+            <div class="sendMessage">
+                <i class="fa-solid fa-envelope fa-3x" style="color: #ffffff;"></i> 
+                <h1>Send Us a Message</h1>
+                <a href="#messageBox">Contat Us</a>
+            </div>
+            
+            <div class="visitUs">
+                <i class="fa-solid fa-location-dot fa-3x" style="color: #ffffff;"></i>
+                <h1>Visit Us</h1>
+                <a href="https://maps.app.goo.gl/6Ht2zRqD6ZSsv2X4A" target="_blank">5295 Westview Drive, Suite 250 <br>Frederick, MD 21703</a>
+            </div>
+        </div>
+        <div class="formContainer">
+            <div id="messageBox">
+                <form id="form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="851a3ffd-232f-4415-b70b-091a0ecfbf68">
+                    <input type="hidden" name="from_name" value="Jeffrey Corp. Contact Us">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required> 
+                    <input type="text" name="Phone Number" placeholder="Phone Number" required>
+                    <input type="text" name="subject" placeholder="Subject" required> 
+                    <textarea name="message" required></textarea> 
+                    <input type="hidden" name="redirect" value="http://localhost:5500/thankyou.html">
+                    <button type="submit">Submit Message</button>
+                </form>
+            </div>
+            <div class="hoursContainer">
+                <h1 class="hours">Hours of Operation</h1>
+                <p>Monday: 9:30AM - 8PM</p>
+                <p>Tuesday: 9:30AM - 8PM</p>
+                <p>Wednesday: 9:30AM - 8PM</p>
+                <p>Thursday: 9:30AM - 8PM</p>
+                <p>Friday: 9:30AM - 8PM</p>
+                <p>Saturday: 9:30AM - 8PM</p>
+                <p>Sunday: 10:00AM - 6PM</p>
+            </div>
+        </div>
+        <div class="privacy">
+            <p class="privacy-notice">We respect your privacy. Your information will not be shared with third parties.</p>
+        </div>
+    </div>
+    
+    
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Jeffrey Corp. All rights reserved.</p>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/feedback.js"></script>
+</body>
+</html>
