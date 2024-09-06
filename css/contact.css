@@ -191,6 +191,9 @@ html {
     #messageBox {
         margin-right: 0; /* Remove right margin on smaller screens */
     }
+    .hoursContainer {
+        max-width: 300px;
+    }
 }
 
 .hoursContainer {
@@ -199,8 +202,7 @@ html {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 100%; /* Ensures it takes up the full width of its container */
-    max-width: 500px; /* Adjust as needed */
+    max-width: 400px; /* Adjust as needed */
     margin: 0 auto; /* Center horizontally */
 }
 
