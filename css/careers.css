@@ -1,0 +1,115 @@
+body {
+    background-color: #F5EBDC;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Header Section */
+.head {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+    color: black;
+}
+
+.head h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.head p {
+    font-size: 1.2rem;
+}
+
+.stores {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #F5EBDC;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.store-section {
+    margin: 0 15px;
+}
+
+.store-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Center and Adjust the Size of the Store List */
+.store-list {
+    list-style: none;
+    padding: 0;
+    max-width: 400px; /* Limit the width */
+    margin: 0 auto; /* Center the list */
+}
+
+.store-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem; /* Smaller font size */
+    color: #333;
+    max-width: 100%; /* Keep the items within the page */
+    text-align: center; /* Center the text */
+}
+
+
+/* Application Button Section */
+.apply-section {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F5EBDC;
+}
+
+.apply-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.apply-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #d9534f;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #c12e2a;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .store-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .store {
+        width: 90%;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+}
