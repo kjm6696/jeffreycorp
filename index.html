@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome - Jeffrey Corp.</title>
+    <link rel="icon" type="image/png" href="assets/Jeffrey.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/nav.js"></script>
 </head>
 <body>
     <div class="header">
-        <img class="jefflogo" src="https://4m4you.com/wp-content/uploads/2020/06/logo-placeholder.png" alt="Jeffrey Corp.">
+        <img src="assets/Jeffrey.png" alt="Jeffrey Corp." style="width: 15%; margin-left: 2%; margin-top: 10px;">
         <img class="burgerlogo" src="assets/burgerking.png" alt="Burger King">
         <div class="hamburger" onclick="toggleMenu()">
             <div class="hamb"></div>
@@ -36,10 +38,18 @@
     </div>
 
     <div class="container">
-        <h1>Welcome to Jeffrey Corp.</h1>
+        <h1 style="color: #555;">Welcome to Jeffrey Corp.</h1>
         <div class="content">
             <div class="slideshow-content">
-                slideshow content here
+                <div class="mySlides fade">
+                    <img src="assets/sharp.jpg" style="width: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/myers.jpg" style="width: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/vally.jpg" style="width: 100%;">
+                </div>
             </div>
             <div class="homelinks-content">
                 <a class="storelocator" href="storelocator.html">Store Locator</a>
@@ -47,10 +57,30 @@
             </div>
         </div>
     </div>
-    
+
     <footer class="footer">
         <p>&copy; 2024 Jeffrey Corp. All rights reserved.</p>
     </footer>
     <script src="js/nav.js"></script>
+    <script>
+    window.onload = function() {
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block"; 
+            setTimeout(showSlides, 5000); 
+        }
+    };
+    </script>
 </body>
 </html>
