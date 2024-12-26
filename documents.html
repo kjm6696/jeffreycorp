@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documents - Jeffrey Corp.</title>
+    <link rel="icon" type="image/png" href="assets/Jeffrey.png">
+    <link rel="stylesheet" href="css/documents.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/12dc875fff.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="assets/Jeffrey.png" alt="Jeffrey Corp." style="width: 15%; margin-left: 2%; margin-top: 10px;"></a>
+        <img class="burgerlogo" src="assets/burgerking.png" alt="Burger King">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="hamb"></div>
+            <div class="hamb2"></div>
+            <div class="hamb"></div>
+        </div>
+    </div>
+
+    <div class="mobile-nav
+    " id="mobileNav">
+        <span class="close-btn" onclick="toggleMenu()">&#10005;</span> <!-- Exit Button -->
+        <a href="index.html">Home</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</body>
+<script>
+    var password = prompt("Please enter the password to view this page.");
+    if (password == "JeffreyCorp") {
+        window.location.href = "index.html";
+    }
+</script>

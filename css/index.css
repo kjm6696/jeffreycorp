@@ -52,7 +52,7 @@ body{
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     background-color: #FF8731;
-    width: 300px;
+    width: 450px;
     height: 40%;
     margin: auto;
     border-radius: 10px;
@@ -103,12 +103,6 @@ body{
     }
     .content {
         flex-direction: column;
-    }
-    .storelocator {
-        margin-right: 5%;
-    }
-    .about {
-        margin-left: 5%;
     }
     .slideshow-content img {
         height: 500px;
