@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://workforcenow.adp.com/mascsr/default/mdf/recwebcomponents/recruitment/main-config/recruitment.js'></script>
 </head>
 <body>
     <div class="header">
@@ -40,8 +41,18 @@
         <header class="head">
             <h1>Career Opportunities</h1>
             <p style="color: #333;">Your chance to build a rewarding career at one of the leading Burger King franchises.</p>
+            
         </header>
-
+        <div class="apply-section">
+            <h2>Ready to Apply?</h2>
+            <p>Join our team and grow your career at Jeffrey Corporation.</p>
+            <button class="apply-button" onclick="widget1()">Crew</button>
+            <button class="apply-button" onclick="widget2()">Hourly Manager</button>
+            <button class="apply-button" onclick="widget3()">Assistant Manager</button>
+            <recruitment-current-openings class="widget1" cid='b4285786-b795-49e4-827c-3c93e48eff13' ccid='9201368967848_3' host='DP' locale='en_US'></recruitment-current-openings>
+            <recruitment-current-openings class="widget2" cid='b4285786-b795-49e4-827c-3c93e48eff13' ccid='9201371764676_3' host='DP' locale='en_US'></recruitment-current-openings>
+            <recruitment-current-openings class="widget3" cid='b4285786-b795-49e4-827c-3c93e48eff13' ccid='9201371770776_3' host='DP' locale='en_US'></recruitment-current-openings>
+        </div>
         <div class="stores">
             <!-- Maryland Stores -->
             <div class="store-section">
@@ -83,15 +94,38 @@
                 </ul>
             </div>
         </div>
-        <div class="apply-section">
-            <h2>Ready to Apply?</h2>
-            <p>Join our team and grow your career at Jeffrey Corporation.</p>
-            <a href="https://www.bk.com/careers" class="apply-button" target="_blank">Apply Now</a>
-        </div>
+        
     </div>
     <footer class="footer">
         <p>&copy; 2024 Jeffrey Corp. All rights reserved.</p>
     </footer>
     <script src="js/nav.js"></script>
+    <script>
+    function widget1() {
+        document.querySelector('.widget1').style.display = 'block';
+        document.querySelector('.widget2').style.display = 'none';
+        document.querySelector('.widget3').style.display = 'none';
+    }
+
+    function widget2() {
+        document.querySelector('.widget1').style.display = 'none';
+        document.querySelector('.widget2').style.display = 'block';
+        document.querySelector('.widget3').style.display = 'none';
+    }
+
+    function widget3() {
+        document.querySelector('.widget1').style.display = 'none';
+        document.querySelector('.widget2').style.display = 'none';
+        document.querySelector('.widget3').style.display = 'block';
+    }
+
+    // Preload widgets by setting their display to none initially
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.widget1').style.display = 'none';
+        document.querySelector('.widget2').style.display = 'none';
+        document.querySelector('.widget3').style.display = 'none';
+    });
+
+    </script>
 </body>
 </html>
